@@ -8,10 +8,10 @@ O objetivo é demonstrar como dados brutos podem ser transformados em informaç�
 
 ## 🔹 Estrutura do Projeto
 
-|Camada      | Nome           | Função                                                     |
-| 🥉 Bronze | Landing Zone** | Ingestão de dados financeiros (Yahoo Finance ou sintético) |
-| 🥈 Silver | Refined Zone** | Limpeza, padronização e deduplicação dos dados             |
-| 🥇 Gold   | Curated Zone** | Modelagem analítica em **fatos e dimensões** (Star Schema) |
+|Camada      | Nome         | Função                                                   |
+| 🥉 Bronze | Landing Zone | Ingestão de dados financeiros (Yahoo Finance ou sintético) |
+| 🥈 Silver | Refined Zone | Limpeza, padronização e deduplicação dos dados             |
+| 🥇 Gold   | Curated Zone | Modelagem analítica em fatos e dimensões** (Star Schema)   |
 
 ---
 
@@ -27,7 +27,7 @@ O Python, com PySpark é a base deste pipeline porque:
 ## 🌊 Lakehouse e Medallion
 
 O Lakehouse combina o melhor dos Data Lakes (escalabilidade) e dos Data Warehouses (governança e performance).  
-A arquitetura Medallion organiza o ciclo de vida dos dados em camadas claras — da ingestão à entrega analítica — usando **Delta Lake** para garantir qualidade e rastreabilidade.
+A arquitetura Medallion organiza o ciclo de vida dos dados em camadas claras — da ingestão à entrega analítica — usando Delta Lake para garantir qualidade e rastreabilidade.
 
 ---
 
@@ -36,7 +36,7 @@ A arquitetura Medallion organiza o ciclo de vida dos dados em camadas claras —
 O projeto entrega um pipeline completo que:
 - gera dados brutos realistas (Landing);  
 - normaliza e corrige inconsistências (Silver);  
-- organiza para consumo analítico (Gold), com tabelas de **fatos e dimensões** e consultas prontas para BI.
+- organiza para consumo analítico (Gold), com tabelas de fatos e dimensões e consultas prontas para BI.
 
 ---
 
