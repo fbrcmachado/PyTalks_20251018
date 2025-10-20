@@ -1,41 +1,59 @@
-# 🧠 Como Python ajuda a construir pipelines de dados inteligentes  
-### 💻 PySpark • Databricks • Delta Lake • Lakehouse • Medallion Architecture
+# 🧠 Como Python ajuda a construir pipelines de dados inteligentes
 
----- 
+Este projeto mostra, de forma prática, **como o Python e o PySpark podem ser usados para criar pipelines de dados inteligentes no Databricks**, aplicando a **arquitetura Medallion (Bronze → Silver → Gold)** dentro de um **Lakehouse** moderno.
 
-## 📘 Descrição
-
-Este projeto demonstra **como o Python e o PySpark são fundamentais na construção de pipelines de dados inteligentes**, aplicando a **arquitetura Medallion (Bronze → Silver → Gold)** sobre um **Lakehouse** moderno no **Databricks**.
-
-A proposta é mostrar, de ponta a ponta, como transformar dados brutos em informação analítica estruturada, pronta para **BI, Data Science e Machine Learning**, unindo:
-- **Engenharia de dados** (ETL/ELT);
-- **Governança e qualidade** (limpeza e deduplicação);
-- **Modelagem analítica** (Star Schema);
-- **Visualização e análise exploratória** (PySpark + Matplotlib).
+O objetivo é demonstrar como dados brutos podem ser transformados em informação analítica e confiável, pronta para BI e Data Science.
 
 ---
 
-## 🧭 Sumário
+## 🔹 Estrutura do Projeto
 
-1. [Objetivo Geral](#-objetivo-geral)  
-2. [Arquitetura do Projeto](#-arquitetura-do-projeto)  
-3. [Por que Python](#-por-que-python)  
-4. [Camadas Medallion](#-camadas-medallion)  
-5. [Lakehouse e ETL](#-lakehouse-e-etl)  
-6. [Modelagem de Dados (Star Schema)](#-modelagem-de-dados-star-schema)  
-7. [Execução do Projeto](#-execução-do-projeto)  
-8. [Visualizações e Consultas](#-visualizações-e-consultas)  
-9. [Próximos Passos](#-próximos-passos)
+| Camada | Nome | Função |
+|:--|:--|:--|
+| 🥉 Bronze | **Landing Zone** | Ingestão de dados financeiros (Yahoo Finance ou sintético) |
+| 🥈 Silver | **Refined Zone** | Limpeza, padronização e deduplicação dos dados |
+| 🥇 Gold | **Curated Zone** | Modelagem analítica em **fatos e dimensões** (Star Schema) |
 
 ---
 
-## 🎯 Objetivo Geral
+## 🐍 Por que Python?
 
-Demonstrar como **Python + PySpark + Delta Lake** constroem pipelines **inteligentes, escaláveis e governáveis**, explorando as boas práticas do **modelo Medallion** e **conceitos de Lakehouse** no Databricks Community.
+O **Python**, com **PySpark**, é a base deste pipeline porque:
+- facilita a integração com APIs e dados externos;
+- simplifica a transformação e limpeza de grandes volumes de dados;
+- permite automatizar todo o processo de ETL dentro do Databricks.
 
 ---
 
-## 🧱 Arquitetura do Projeto
+## 🌊 Lakehouse e Medallion
 
-A solução é baseada no modelo **Medallion Architecture**, amplamente usado em ambientes Lakehouse:
+O **Lakehouse** combina o melhor dos **Data Lakes** (escalabilidade) e dos **Data Warehouses** (governança e performance).  
+A **arquitetura Medallion** organiza o ciclo de vida dos dados em camadas claras — da ingestão à entrega analítica — usando **Delta Lake** para garantir qualidade e rastreabilidade.
+
+---
+
+## 📈 Resultados
+
+O projeto entrega um pipeline completo que:
+- gera dados brutos realistas (Landing);  
+- normaliza e corrige inconsistências (Silver);  
+- organiza para consumo analítico (Gold), com tabelas de **fatos e dimensões** e consultas prontas para BI.
+
+---
+
+💡 **Em resumo:**  
+> O Python transforma o Databricks em uma plataforma de dados completa — capaz de ingerir, limpar, modelar e analisar — tudo dentro de um Lakehouse unificado.
+
+📜 Licença
+
+Este projeto é distribuído sob a licença MIT
+.
+
+👨‍💻 Autor
+
+Antonio Fabricio Santil Machado
+📍 Projeto educacional — palestra “Como Python ajuda a construir pipelines de dados inteligentes”
+
+
+
 
