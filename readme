@@ -1,14 +1,7 @@
 # 🧠 Como Python ajuda a construir pipelines de dados inteligentes  
 ### 💻 PySpark • Databricks • Delta Lake • Lakehouse • Medallion Architecture
 
----
-
-![Databricks](https://img.shields.io/badge/Databricks-Lakehouse-orange?logo=databricks)
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Ativo-success)
-
----
+---- 
 
 ## 📘 Descrição
 
