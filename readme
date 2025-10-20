@@ -1,6 +1,6 @@
 # 🧠 Como Python ajuda a construir pipelines de dados inteligentes
 
-Este projeto mostra, de forma prática, **como o Python e o PySpark podem ser usados para criar pipelines de dados inteligentes no Databricks**, aplicando a **arquitetura Medallion (Bronze → Silver → Gold)** dentro de um **Lakehouse** moderno.
+Este projeto mostra, de forma prática, como o Python e o PySpark podem ser usados para criar pipelines de dados inteligentes no Databricks aplicando a arquitetura Medallion (Bronze → Silver → Gold) dentro de um Lakehouse moderno.
 
 O objetivo é demonstrar como dados brutos podem ser transformados em informação analítica e confiável, pronta para BI e Data Science.
 
@@ -8,17 +8,16 @@ O objetivo é demonstrar como dados brutos podem ser transformados em informaç�
 
 ## 🔹 Estrutura do Projeto
 
-| Camada | Nome | Função |
-|:--|:--|:--|
-| 🥉 Bronze | **Landing Zone** | Ingestão de dados financeiros (Yahoo Finance ou sintético) |
-| 🥈 Silver | **Refined Zone** | Limpeza, padronização e deduplicação dos dados |
-| 🥇 Gold | **Curated Zone** | Modelagem analítica em **fatos e dimensões** (Star Schema) |
+|Camada      | Nome           | Função                                                     |
+| 🥉 Bronze | Landing Zone** | Ingestão de dados financeiros (Yahoo Finance ou sintético) |
+| 🥈 Silver | Refined Zone** | Limpeza, padronização e deduplicação dos dados             |
+| 🥇 Gold   | Curated Zone** | Modelagem analítica em **fatos e dimensões** (Star Schema) |
 
 ---
 
 ## 🐍 Por que Python?
 
-O **Python**, com **PySpark**, é a base deste pipeline porque:
+O Python, com PySpark é a base deste pipeline porque:
 - facilita a integração com APIs e dados externos;
 - simplifica a transformação e limpeza de grandes volumes de dados;
 - permite automatizar todo o processo de ETL dentro do Databricks.
@@ -27,8 +26,8 @@ O **Python**, com **PySpark**, é a base deste pipeline porque:
 
 ## 🌊 Lakehouse e Medallion
 
-O **Lakehouse** combina o melhor dos **Data Lakes** (escalabilidade) e dos **Data Warehouses** (governança e performance).  
-A **arquitetura Medallion** organiza o ciclo de vida dos dados em camadas claras — da ingestão à entrega analítica — usando **Delta Lake** para garantir qualidade e rastreabilidade.
+O Lakehouse combina o melhor dos Data Lakes (escalabilidade) e dos Data Warehouses (governança e performance).  
+A arquitetura Medallion organiza o ciclo de vida dos dados em camadas claras — da ingestão à entrega analítica — usando **Delta Lake** para garantir qualidade e rastreabilidade.
 
 ---
 
@@ -41,7 +40,7 @@ O projeto entrega um pipeline completo que:
 
 ---
 
-💡 **Em resumo:**  
+💡 Em resumo:  
 > O Python transforma o Databricks em uma plataforma de dados completa — capaz de ingerir, limpar, modelar e analisar — tudo dentro de um Lakehouse unificado.
 
 📜 Licença
